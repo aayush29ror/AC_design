@@ -1,20 +1,23 @@
 {
-  "name": "portfolio",
+  "homepage": "https://aayush29ror.github.io/AC_design/",
+  "name": "AC Creative Portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "framer-motion": "^10.16.4",
-    "react-intersection-observer": "^9.5.2",
-    "@heroicons/react": "^2.0.18"
+    "react-intersection-observer": "^9.5.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -26,6 +29,7 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
